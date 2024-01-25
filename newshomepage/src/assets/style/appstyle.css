@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Inter";
+  src: url(/src/assets/fonts/static/Inter-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(/src/assets/fonts/static/Inter-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(/src/assets/fonts/static/Inter-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: hsl(36, 100%, 99%);
+}
+
+.news_app_container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 100px;
+}
+
+@media (max-width: 767px) {
+  .news_app_container {
+    padding: 30px 20px;
+  }
+}
