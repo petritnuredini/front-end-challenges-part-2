@@ -29,16 +29,16 @@ const Header = () => {
           <Link to={"/"} className="navbar_list_item">
             <li>Home</li>
           </Link>
-          <Link to={"/new"} className="navbar_list_item">
+          <Link to={"/#"} className="navbar_list_item">
             <li>New</li>
           </Link>
-          <Link to={"/popular"} className="navbar_list_item">
+          <Link to={"/#"} className="navbar_list_item">
             <li>Popular</li>
           </Link>
-          <Link to={"/trending"} className="navbar_list_item">
+          <Link to={"/#"} className="navbar_list_item">
             <li>Trending</li>
           </Link>
-          <Link to={"/categories"} className="navbar_list_item">
+          <Link to={"/#"} className="navbar_list_item">
             <li>Categories</li>
           </Link>
         </ul>
@@ -58,16 +58,16 @@ const Header = () => {
               <Link to={"/"} className="navbar_list_item">
                 <li>Home</li>
               </Link>
-              <Link to={"/new"} className="navbar_list_item">
+              <Link to={"/#"} className="navbar_list_item">
                 <li>New</li>
               </Link>
-              <Link to={"/popular"} className="navbar_list_item">
+              <Link to={"/#"} className="navbar_list_item">
                 <li>Popular</li>
               </Link>
-              <Link to={"/trending"} className="navbar_list_item">
+              <Link to={"/#"} className="navbar_list_item">
                 <li>Trending</li>
               </Link>
-              <Link to={"/categories"} className="navbar_list_item">
+              <Link to={"/#"} className="navbar_list_item">
                 <li>Categories</li>
               </Link>
             </ul>

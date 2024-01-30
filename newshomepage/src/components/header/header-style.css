@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 40px;
+  padding-bottom: 50px;
   /* background-color: olivedrab; */
 }
 
@@ -48,7 +49,7 @@
 
   .mobile_menu_overlay {
     margin-right: -800px;
-    transition: margin-left 3s ease;
+    transition: margin-right 0.3s ease;
     width: 100%;
     position: fixed;
     right: 0;
@@ -66,7 +67,7 @@
   .mobile_menu {
     width: 300px;
     background-color: hsl(36, 100%, 99%);
-    padding: 20px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     gap: 70px;

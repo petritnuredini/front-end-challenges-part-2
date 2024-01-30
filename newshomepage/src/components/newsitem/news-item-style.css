@@ -1,0 +1,39 @@
+.news_item_wrapper {
+  display: flex;
+  gap: 20px;
+  width: 350px;
+}
+
+.news_item_image_container {
+  width: 100px;
+  height: 110px;
+}
+
+.news_item_image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.news_item_details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.news_item_number {
+  font-weight: bold;
+  font-size: 24px;
+  color: hsl(233, 8%, 79%);
+}
+
+.news_item_title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.news_item_description {
+  color: hsl(236, 13%, 42%);
+  width: 220px;
+}
