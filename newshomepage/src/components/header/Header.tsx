@@ -26,21 +26,35 @@ const Header = () => {
       </div>
       <div className="header_right_side">
         <ul className="navbar_list">
-          <Link to={"/"} className="navbar_list_item">
-            <li>Home</li>
-          </Link>
-          <Link to={"/#"} className="navbar_list_item">
-            <li>New</li>
-          </Link>
-          <Link to={"/#"} className="navbar_list_item">
-            <li>Popular</li>
-          </Link>
-          <Link to={"/#"} className="navbar_list_item">
-            <li>Trending</li>
-          </Link>
-          <Link to={"/#"} className="navbar_list_item">
-            <li>Categories</li>
-          </Link>
+          <li>
+            <Link to={"/"} className="navbar_list_item">
+              Home
+            </Link>
+          </li>
+
+          <li>
+            <Link to={"/#"} className="navbar_list_item">
+              New
+            </Link>
+          </li>
+
+          <li>
+            <Link to={"/#"} className="navbar_list_item">
+              Popular
+            </Link>
+          </li>
+
+          <li>
+            <Link to={"/#"} className="navbar_list_item">
+              Trending
+            </Link>
+          </li>
+
+          <li>
+            <Link to={"/#"} className="navbar_list_item">
+              Categories
+            </Link>
+          </li>
         </ul>
         <button className="menu_icon" onClick={openMenu}>
           <MenuIcon />
@@ -55,21 +69,35 @@ const Header = () => {
               <MenuCloseIcon />
             </button>
             <ul className="navbar_list_mobile">
-              <Link to={"/"} className="navbar_list_item">
-                <li>Home</li>
-              </Link>
-              <Link to={"/#"} className="navbar_list_item">
-                <li>New</li>
-              </Link>
-              <Link to={"/#"} className="navbar_list_item">
-                <li>Popular</li>
-              </Link>
-              <Link to={"/#"} className="navbar_list_item">
-                <li>Trending</li>
-              </Link>
-              <Link to={"/#"} className="navbar_list_item">
-                <li>Categories</li>
-              </Link>
+              <li>
+                <Link to={"/"} className="navbar_list_item">
+                  Home
+                </Link>
+              </li>
+
+              <li>
+                <Link to={"/#"} className="navbar_list_item">
+                  New
+                </Link>
+              </li>
+
+              <li>
+                <Link to={"/#"} className="navbar_list_item">
+                  Popular
+                </Link>
+              </li>
+
+              <li>
+                <Link to={"/#"} className="navbar_list_item">
+                  Trending
+                </Link>
+              </li>
+
+              <li>
+                <Link to={"/#"} className="navbar_list_item">
+                  Categories
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
