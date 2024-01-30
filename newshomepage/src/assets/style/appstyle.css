@@ -47,8 +47,14 @@ body {
 }
 
 .attribution {
-  position: absolute;
-  bottom: 5px;
+  margin-top: 40px;
+}
+
+@media (min-height: 1200px) {
+  .attribution {
+    position: absolute;
+    bottom: 5px;
+  }
 }
 
 @media (max-width: 767px) {
