@@ -38,6 +38,7 @@ body {
 
 .news_screens_container {
   max-width: 1500px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,8 +46,21 @@ body {
   width: 100%;
 }
 
+.attribution {
+  position: absolute;
+  bottom: 5px;
+}
+
 @media (max-width: 767px) {
   .news_app_container {
     padding: 30px 20px;
+  }
+
+  .attribution {
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    position: relative;
   }
 }

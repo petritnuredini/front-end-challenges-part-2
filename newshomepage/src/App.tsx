@@ -8,7 +8,7 @@ import Header from "./components/header/Header";
 function App() {
   return (
     <BrowserRouter>
-      <div className="news_app_container">
+      <div className="news_app_container" role="main">
         <Header />
         <div className="news_screens_container">
           <Routes>
@@ -17,6 +17,13 @@ function App() {
             <Route path="/new" element={<New />} />
             {/* Public routes above this line */}
           </Routes>
+        </div>
+        <div className="attribution" role="contentinfo">
+          Challenge by{" "}
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor
+          </a>
+          . Coded by <a href="#">Petrit Nuredini</a>{" "}
         </div>
       </div>
     </BrowserRouter>
