@@ -1,0 +1,33 @@
+.balance_details_container {
+  background-color: hsl(10, 79%, 65%);
+  width: 100%;
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.left_side_balance {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.my_balance_label {
+  color: hsl(27, 66%, 92%);
+  font-size: 16px;
+}
+
+.balance_amount {
+  font-size: 28px;
+  font-weight: 700;
+  color: hsl(27, 66%, 92%);
+}
+
+@media (max-width: 767px) {
+  .balance_details_container {
+    padding: 15px;
+  }
+}
