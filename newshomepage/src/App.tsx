@@ -10,12 +10,14 @@ function App() {
     <BrowserRouter>
       <div className="news_app_container">
         <Header />
-        <Routes>
-          {/* Public routes below this line */}
-          <Route path="/" element={<Home />} />
-          <Route path="/new" element={<New />} />
-          {/* Public routes above this line */}
-        </Routes>
+        <div className="news_screens_container">
+          <Routes>
+            {/* Public routes below this line */}
+            <Route path="/" element={<Home />} />
+            <Route path="/new" element={<New />} />
+            {/* Public routes above this line */}
+          </Routes>
+        </div>
       </div>
     </BrowserRouter>
   );
