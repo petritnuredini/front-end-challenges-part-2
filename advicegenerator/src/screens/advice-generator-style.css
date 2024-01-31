@@ -1,0 +1,8 @@
+.advice_generator_screen_container {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: hsl(218, 23%, 16%);
+}

@@ -1,0 +1,68 @@
+.advice_card_wrapper {
+  max-width: 500px;
+  width: 100%;
+  background-color: hsl(217, 19%, 24%);
+  padding: 40px 40px 70px 40px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+  gap: 20px;
+  position: relative;
+}
+
+.advice_id_label {
+  color: hsl(150, 100%, 66%);
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.advice_text {
+  color: hsl(193, 38%, 86%);
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.dice_button {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  bottom: -25px;
+  background-color: hsl(150, 100%, 66%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dice_button:hover,
+.dice_button:active {
+  box-shadow: 0px 2px 50px 0px hsl(150, 100%, 66%);
+}
+
+.divider_desktop {
+  margin-top: auto;
+}
+.divider_mobile {
+  display: none;
+}
+
+.dice_button svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 767px) {
+  .divider_desktop {
+    display: none;
+  }
+  .divider_mobile {
+    display: block;
+    margin-top: auto;
+  }
+}
