@@ -6,20 +6,27 @@ import useAdviceHook from "./useAdviceHook";
 import DividerMobile from "../../assets/images/DividerMobile";
 
 const AdviceCard = () => {
-  const { advice, fetchAdvice } = useAdviceHook();
+  const { advice, fetchAdvice, loading } = useAdviceHook();
 
   return (
     <div className="advice_card_wrapper" role="application">
-      <h4 className="advice_id_label">
-        ADVICE #{advice.id !== null ? advice.id : "000"}
-      </h4>
-      {advice.advice !== null ? (
-        <p className="advice_text">“{advice.advice}”</p>
+      {loading === false ? (
+        <>
+          {" "}
+          <h4 className="advice_id_label">
+            ADVICE #{advice.id !== null ? advice.id : "000"}
+          </h4>
+          {advice.advice !== null ? (
+            <p className="advice_text">“{advice.advice}”</p>
+          ) : (
+            <p className="advice_text">
+              “Something went wrong fetching advice, best advice I can give is :
+              fix your internet or come again later!”
+            </p>
+          )}
+        </>
       ) : (
-        <p className="advice_text">
-          “Something went wrong fetching advice, best advice I can give is : fix
-          your internet or come again later!”
-        </p>
+        <p className="advice_text">Loading...</p>
       )}
 
       <DividerDesktop />

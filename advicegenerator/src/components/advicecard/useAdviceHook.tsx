@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Advice } from "../../types/types";
 
 const useAdviceHook = () => {
+  const [loading, setLoading] = useState<boolean>(false);
   const [advice, setAdvice] = useState<Advice>({
     advice: null,
     id: null,
@@ -13,6 +14,7 @@ const useAdviceHook = () => {
   }, []);
 
   const fetchAdvice = () => {
+    setLoading(true);
     axios
       .get("https://api.adviceslip.com/advice")
       .then((response) => {
@@ -26,12 +28,16 @@ const useAdviceHook = () => {
           advice: null,
           id: null,
         });
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
 
   return {
     advice,
     fetchAdvice,
+    loading,
   };
 };
 
