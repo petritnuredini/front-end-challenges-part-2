@@ -3,13 +3,14 @@
   background-color: hsl(235, 46%, 20%);
   flex-direction: column;
   border-radius: 15px;
-  max-width: 230px;
+  max-width: 200px;
 }
 
 .dashboard_profile_user {
   background-color: hsl(246, 80%, 60%);
   border-radius: 15px;
   padding: 25px 25px 50px 25px;
+  height: 100%;
 }
 
 .dashboard_image_container {
@@ -50,4 +51,18 @@
   cursor: pointer;
   width: 80px;
   font-size: 16px;
+  color: hsl(235, 45%, 61%);
+}
+
+.time_options .option:active,
+.time_options .option.active,
+.time_options .option:hover {
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .dashboard_profile_wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
 }

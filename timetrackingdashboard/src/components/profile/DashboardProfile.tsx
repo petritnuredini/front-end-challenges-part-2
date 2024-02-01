@@ -6,6 +6,8 @@ const DashboardProfile = ({
   userimage,
   username,
   timeframes,
+  timeFrame,
+  setTimeFrame,
 }: DashBoardProfile) => {
   return (
     <div className="dashboard_profile_wrapper">
@@ -20,7 +22,11 @@ const DashboardProfile = ({
       <div className="time_options">
         {timeframes.length > 0 &&
           timeframes.map((time: string) => (
-            <button className="option" key={time}>
+            <button
+              className={`option ${timeFrame === time ? "active" : ""}`}
+              key={time}
+              onClick={() => setTimeFrame && setTimeFrame(time)}
+            >
               {time}
             </button>
           ))}

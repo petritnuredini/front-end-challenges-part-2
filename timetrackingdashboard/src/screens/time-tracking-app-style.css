@@ -1,4 +1,29 @@
 .dashboard_container {
   display: flex;
+  justify-content: center;
   gap: 30px;
+  width: 100%;
+}
+
+.dashboard_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  max-width: 660px;
+}
+
+@media (max-width: 992px) {
+  .dashboard_cards {
+    max-width: 430px;
+  }
+}
+
+@media (max-width: 767px) {
+  .dashboard_container {
+    flex-direction: column;
+  }
+  .dashboard_cards {
+    max-width: 100%;
+  }
 }
