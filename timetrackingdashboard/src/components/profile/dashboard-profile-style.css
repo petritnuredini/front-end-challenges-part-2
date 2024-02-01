@@ -1,0 +1,53 @@
+.dashboard_profile_wrapper {
+  display: flex;
+  background-color: hsl(235, 46%, 20%);
+  flex-direction: column;
+  border-radius: 15px;
+  max-width: 230px;
+}
+
+.dashboard_profile_user {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 15px;
+  padding: 25px 25px 50px 25px;
+}
+
+.dashboard_image_container {
+  width: 70px;
+  height: 70px;
+  padding: 3px;
+  background-color: white;
+  border-radius: 100%;
+  margin-bottom: 35px;
+}
+
+.user_image {
+  width: 100%;
+  height: 100%;
+}
+
+.profile_dashboard_label {
+  font-size: 13px;
+  color: hsl(236, 100%, 87%);
+}
+
+.dashboard_user_name {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.time_options {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.time_options .option {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 80px;
+  font-size: 16px;
+}
