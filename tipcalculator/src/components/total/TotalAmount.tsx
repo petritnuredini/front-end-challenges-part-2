@@ -13,7 +13,7 @@ const TotalAmount = ({
   resetValues,
 }: TotalAmountProps) => {
   return (
-    <div className="total_amount_wrapper">
+    <aside className="total_amount_wrapper">
       <div className="total_option">
         <div className="total_option_left">
           <p className="option_title">Tip Amount</p>
@@ -36,7 +36,7 @@ const TotalAmount = ({
       >
         RESET
       </button>
-    </div>
+    </aside>
   );
 };
 

@@ -43,13 +43,13 @@ const Splitter = () => {
   }, [billAmount, tipPercentage, numberOfPeople]);
 
   return (
-    <div className="splitter_screen_container">
+    <main className="splitter_screen_container">
       <h1 className="splitter_app_title">
         Spli
         <br />
         tter
       </h1>
-      <div className="splitter_app">
+      <section className="splitter_app">
         <Calculator
           billAmount={billAmount}
           setBillAmount={setBillAmount}
@@ -63,8 +63,8 @@ const Splitter = () => {
           totalAmount={totalAmount}
           resetValues={resetValues}
         />
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

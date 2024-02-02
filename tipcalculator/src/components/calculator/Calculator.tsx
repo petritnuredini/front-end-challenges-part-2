@@ -46,7 +46,7 @@ const Calculator = ({
   };
 
   return (
-    <div className="calculator_wrapper">
+    <aside className="calculator_wrapper">
       <div className="splitter_input_wrapper">
         <p className="error_message">Can't be zero!</p>
         <label htmlFor="bill_input" className="label">
@@ -132,7 +132,7 @@ const Calculator = ({
           />
         </div>
       </div>
-    </div>
+    </aside>
   );
 };
 
