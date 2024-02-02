@@ -6,6 +6,16 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.quote_icon {
+  position: absolute;
+  right: 20%;
+  top: 0;
+  z-index: 0;
 }
 
 .testimonial_header {
@@ -54,11 +64,19 @@
 
 .testimonial_title {
   font-size: 20px;
-  color: white;
+  position: relative;
+  z-index: 3;
 }
 
 .testimonial_description {
   font-size: 13px;
-  color: white;
   opacity: 70%;
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 767px) {
+  .testimonial_type_one {
+    width: 100% !important;
+  }
 }

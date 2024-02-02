@@ -31,7 +31,7 @@ export const testimonialsData: TestimonialsType = {
   jeanette: {
     width: "30%",
     image: JeanetteImage,
-    backgroundColor: "hsl(0, 0%, 100%)",
+    backgroundColor: "white",
     name: "Jeanette Harmon",
     position: "Verified Graduate",
     title: "An overall wonderful and rewarding experience",
@@ -52,7 +52,7 @@ export const testimonialsData: TestimonialsType = {
   kira: {
     width: "100%",
     image: KiraImage,
-    backgroundColor: "hsl(0, 0%, 100%)",
+    backgroundColor: "white",
     name: "Kira Whittle",
     position: "Verified Graduate",
     title: "Such a life-changing experience. Highly recommended!",

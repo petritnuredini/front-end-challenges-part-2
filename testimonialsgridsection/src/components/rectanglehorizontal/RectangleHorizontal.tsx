@@ -1,6 +1,7 @@
 import React from "react";
 import "./rectangle-horizonta-style.css";
 import { TestimonialProps } from "../../types";
+import QuoteIcon from "../../assets/images/bg-pattern-quotation.svg";
 
 interface ComponentProps {
   testimonial: TestimonialProps;
@@ -13,8 +14,15 @@ const RectangleHorizontal = ({ testimonial }: ComponentProps) => {
       style={{
         width: testimonial.width,
         backgroundColor: testimonial.backgroundColor,
+        color:
+          testimonial.backgroundColor === "white"
+            ? "hsl(217, 19%, 35%)"
+            : "white",
       }}
     >
+      {testimonial.quotes !== undefined && (
+        <img src={QuoteIcon} alt="Quote Icon" className="quote_icon" />
+      )}
       <div className="testimonial_header">
         <div className="profile_image_container">
           <img

@@ -1,10 +1,6 @@
 import React from "react";
 import "./testimonials-grid-style.css";
 import RectangleHorizontal from "../components/rectanglehorizontal/RectangleHorizontal";
-import Jonathan from "../components/jonathan/Jonathan";
-import Jeanette from "../components/jeanette/Jeanette";
-import Patrick from "../components/patrick/Patrick";
-import Kira from "../components/kira/Kira";
 import { testimonialsData } from "../data/appdata";
 
 const TestimonialsGrid = () => {
