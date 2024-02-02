@@ -1,3 +1,49 @@
 .total_amount_wrapper {
   width: 50%;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.total_option {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option_title {
+  font-size: 14px;
+  color: white;
+}
+
+.option_sub_title {
+  color: hsl(184, 14%, 56%);
+  font-size: 12px;
+}
+
+.total_amount {
+  color: hsl(172, 67%, 45%);
+  font-size: 38px;
+}
+
+.reset_button {
+  all: unset;
+  cursor: pointer;
+  background-color: hsl(172, 67%, 45%);
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  color: hsl(183, 100%, 15%);
+}
+
+.reset_button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
 }

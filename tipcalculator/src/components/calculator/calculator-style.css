@@ -56,8 +56,8 @@
   font-size: 24px;
 }
 
-.splitter_input.error_input {
-  outline: 2px solid rgb(228, 85, 14);
+.splitter_input::placeholder {
+  color: hsl(184, 14%, 56%);
 }
 
 .splitter_input:active,
@@ -65,6 +65,10 @@
 .splitter_input:hover {
   outline: 2px solid hsl(172, 67%, 45%);
   cursor: pointer;
+}
+
+.splitter_input.error_input {
+  outline: 2px solid rgb(228, 85, 14);
 }
 
 .select_tip_percentage {
@@ -95,7 +99,9 @@
   font-size: 22px;
 }
 
-.tip_option:hover {
+.tip_option.active,
+.tip_option:hover,
+.tip_option:hover:active {
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
 }
