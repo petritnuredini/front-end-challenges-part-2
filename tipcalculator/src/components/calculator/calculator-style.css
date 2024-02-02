@@ -136,3 +136,15 @@
   outline: 2px solid hsl(172, 67%, 45%);
   cursor: pointer;
 }
+
+@media (max-width: 767px) {
+  .calculator_wrapper {
+    width: 100%;
+    gap: 40px;
+  }
+
+  .tip_option,
+  .tip_custom_option {
+    width: calc(100% / 2 - 5px);
+  }
+}

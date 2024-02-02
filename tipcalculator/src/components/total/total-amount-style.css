@@ -47,3 +47,9 @@
   opacity: 0.3;
   cursor: not-allowed;
 }
+
+@media (max-width: 767px) {
+  .total_amount_wrapper {
+    width: 100%;
+  }
+}
