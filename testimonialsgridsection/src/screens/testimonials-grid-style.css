@@ -1,0 +1,31 @@
+.testimonials_grid_screen {
+  min-height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  width: 85%;
+  display: flex;
+  gap: 30px;
+}
+
+.left_side_grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 70%;
+}
+
+.left_side_first_row,
+.left_side_second_row {
+  display: flex;
+  gap: 30px;
+}
+
+.right_side_grid {
+  display: flex;
+  width: 30%;
+}
