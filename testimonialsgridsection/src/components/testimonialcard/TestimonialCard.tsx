@@ -7,7 +7,7 @@ interface ComponentProps {
   testimonial: TestimonialProps;
 }
 
-const RectangleHorizontal = ({ testimonial }: ComponentProps) => {
+const TestimonialCard = ({ testimonial }: ComponentProps) => {
   return (
     <div
       className="testimonial_type_one"
@@ -44,4 +44,4 @@ const RectangleHorizontal = ({ testimonial }: ComponentProps) => {
   );
 };
 
-export default RectangleHorizontal;
+export default TestimonialCard;

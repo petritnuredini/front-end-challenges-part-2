@@ -1,6 +1,6 @@
 import React from "react";
 import "./testimonials-grid-style.css";
-import RectangleHorizontal from "../components/rectanglehorizontal/RectangleHorizontal";
+import TestimonialCard from "../components/testimonialcard/TestimonialCard";
 import { testimonialsData } from "../data/appdata";
 
 const TestimonialsGrid = () => {
@@ -11,16 +11,16 @@ const TestimonialsGrid = () => {
       <section className="grid">
         <section className="left_side_grid">
           <section className="left_side_first_row">
-            <RectangleHorizontal testimonial={daniel} />
-            <RectangleHorizontal testimonial={jonathan} />
+            <TestimonialCard testimonial={daniel} />
+            <TestimonialCard testimonial={jonathan} />
           </section>
           <section className="left_side_second_row">
-            <RectangleHorizontal testimonial={jeanette} />
-            <RectangleHorizontal testimonial={patrick} />
+            <TestimonialCard testimonial={jeanette} />
+            <TestimonialCard testimonial={patrick} />
           </section>
         </section>
         <aside className="right_side_grid">
-          <RectangleHorizontal testimonial={kira} />
+          <TestimonialCard testimonial={kira} />
         </aside>
       </section>
     </main>
