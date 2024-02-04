@@ -1,0 +1,18 @@
+.social_media_button {
+  text-decoration: none;
+  width: 100%;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 5px;
+  padding: 8px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  height: 40px;
+}
+
+.social_media_button:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
+}
