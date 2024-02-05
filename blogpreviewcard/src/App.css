@@ -4,3 +4,93 @@
   box-sizing: border-box;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
+
+.app_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(47, 88%, 63%);
+  padding: 20px;
+}
+
+.card_wrapper {
+  background-color: white;
+  max-width: 330px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 1);
+}
+
+.image_container {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.blog_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.learning_category {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  background-color: hsl(47, 88%, 63%);
+  width: 90px;
+  border-radius: 5px;
+  padding: 5px 5px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.published_date {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.blog_post_title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.blog_post_title:hover {
+  color: hsl(47, 88%, 63%);
+}
+
+.blog_description {
+  font-weight: 500;
+  font-size: 14px;
+  color: hsl(0, 0%, 50%);
+  margin-bottom: 20px;
+}
+
+.profile_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar_container {
+  width: 30px;
+  height: 30px;
+}
+
+.profile_avatar_img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile_user_name {
+  font-size: 14px;
+}
