@@ -32,8 +32,8 @@ const ThreeColumnPreviewCard = () => {
   ];
 
   return (
-    <div className="three_column_preview_card_container">
-      <div className="cards_container">
+    <main className="three_column_preview_card_container">
+      <article className="cards_container">
         {carTypes.length > 0 &&
           carTypes.map((car: CardProps) => (
             <CardComponent
@@ -44,8 +44,8 @@ const ThreeColumnPreviewCard = () => {
               key={car.title}
             />
           ))}
-      </div>
-    </div>
+      </article>
+    </main>
   );
 };
 
