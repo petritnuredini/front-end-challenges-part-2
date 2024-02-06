@@ -1,0 +1,18 @@
+.three_column_preview_card_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  padding: 20px;
+}
+
+.cards_container {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .cards_container {
+    flex-direction: column;
+  }
+}
