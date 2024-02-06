@@ -18,7 +18,7 @@ const CardComponent = ({
       <div className="car_type_image_container">
         <img src={image} alt={`${title} car`} className="car_type_image" />
       </div>
-      <h2 className="car_type_title">{title}</h2>
+      <h1 className="car_type_title">{title}</h1>
       <p className="car_type_desc">{description}</p>
       <button
         className="learn_more_button"
