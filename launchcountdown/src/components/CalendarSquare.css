@@ -1,0 +1,70 @@
+.count_down_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.calendar_wrapper {
+  width: 150px;
+  height: 150px;
+  background-color: hsl(236, 21%, 23%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 0px 9px 0px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 0px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 0px 1px rgba(0, 0, 0, 0.75);
+}
+
+.calendar_item_bottom,
+.calendar_item_top {
+  width: 150px;
+  height: 75px;
+}
+.divider {
+  width: 100%;
+  height: 1.5px;
+  background-color: hsla(236, 21%, 30%, 0.4);
+  position: relative;
+}
+
+.calendar_item_bottom {
+  background-color: hsl(236, 21%, 30%);
+}
+
+.circle_left,
+.circle_right {
+  width: 15px;
+  height: 15px;
+  background-color: hsl(234, 17%, 12%);
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.circle_right {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.countdown_number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: hsl(345, 95%, 68%);
+}
+
+.calendar_label {
+  color: hsl(237, 18%, 59%);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 14px;
+}
