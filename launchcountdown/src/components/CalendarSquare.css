@@ -68,3 +68,24 @@
   letter-spacing: 5px;
   font-size: 14px;
 }
+
+@media (max-width: 767px) {
+  .calendar_wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .calendar_item_bottom,
+  .calendar_item_top {
+    width: 70px;
+    height: 35px;
+  }
+
+  .countdown_number {
+    font-size: 32px;
+  }
+  .calendar_label {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+}

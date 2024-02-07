@@ -25,6 +25,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 100px;
+  padding: 20px;
 }
 
 .pattern_hills {
@@ -87,4 +88,26 @@ body {
 
 .social_media_link:hover svg {
   fill: rgb(251, 96, 135);
+}
+
+@media (max-width: 767px) {
+  .countdown_timer_app {
+    gap: 60px;
+  }
+  .countdown_wrapper {
+    gap: 20px;
+  }
+  .stars_bg {
+    object-position: right;
+  }
+  .pattern_hills {
+    height: 200px;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .launch_title {
+    text-align: center;
+    font-size: 23px;
+  }
 }
