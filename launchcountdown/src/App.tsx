@@ -59,7 +59,10 @@ const App: React.FC = () => {
       <img src={PatternHills} alt="Pattern hills" className="pattern_hills" />
       <h1 className="launch_title">We're launching soon</h1>
       <section className="countdown_wrapper">
-        <CalendarSquare number={timeLeft.days.toString()} label="Days" />
+        <CalendarSquare
+          number={timeLeft.days.toString().padStart(2, "0")}
+          label="Days"
+        />
         <CalendarSquare
           number={timeLeft.hours.toString().padStart(2, "0")}
           label="Hours"
