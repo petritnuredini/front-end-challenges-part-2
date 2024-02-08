@@ -49,7 +49,6 @@ const App: React.FC = () => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    // Cleanup the interval on component unmount
     return () => clearInterval(timer);
   }, []);
 
