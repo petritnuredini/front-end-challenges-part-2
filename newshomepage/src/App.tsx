@@ -12,10 +12,8 @@ function App() {
         <Header />
         <div className="news_screens_container">
           <Routes>
-            {/* Public routes below this line */}
             <Route path="/" element={<Home />} />
             <Route path="/new" element={<New />} />
-            {/* Public routes above this line */}
           </Routes>
         </div>
         <div className="attribution" role="contentinfo">
