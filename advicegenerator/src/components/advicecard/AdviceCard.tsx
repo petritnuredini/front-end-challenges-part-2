@@ -13,9 +13,9 @@ const AdviceCard = () => {
       {loading === false ? (
         <>
           {" "}
-          <h4 className="advice_id_label">
+          <h1 className="advice_id_label">
             ADVICE #{advice.id !== null ? advice.id : "000"}
-          </h4>
+          </h1>
           {advice.advice !== null ? (
             <p className="advice_text">“{advice.advice}”</p>
           ) : (
