@@ -9,7 +9,7 @@ const AdviceCard = () => {
   const { advice, fetchAdvice, loading } = useAdviceHook();
 
   return (
-    <div className="advice_card_wrapper" role="application">
+    <section className="advice_card_wrapper" role="application">
       {loading === false ? (
         <>
           {" "}
@@ -35,7 +35,7 @@ const AdviceCard = () => {
       <button className="dice_button" onClick={fetchAdvice}>
         <DiceIcon />
       </button>
-    </div>
+    </section>
   );
 };
 

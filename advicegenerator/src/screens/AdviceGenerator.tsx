@@ -4,9 +4,9 @@ import AdviceCard from "../components/advicecard/AdviceCard";
 
 const AdviceGenerator = () => {
   return (
-    <div className="advice_generator_screen_container" role="main">
+    <main className="advice_generator_screen_container" role="main">
       <AdviceCard />
-    </div>
+    </main>
   );
 };
 
