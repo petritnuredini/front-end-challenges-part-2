@@ -32,6 +32,9 @@ const Card = () => {
           </a>
         </div>
         <button className="process">Process to Payment</button>
+        <a href="#" className="cancel_order">
+          Cancel Order
+        </a>
       </div>
     </section>
   );
