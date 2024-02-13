@@ -24,7 +24,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 50px 30px;
+  padding: 40px 25px;
 }
 
 .order_summary_title {
@@ -63,6 +63,11 @@
   margin-left: auto;
   font-weight: 700;
   font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.change_link:hover {
+  opacity: 0.6;
 }
 
 .process {
@@ -78,9 +83,42 @@
   font-weight: 700;
   cursor: pointer;
   margin-top: 10px;
+  transition: all 0.3s ease;
 }
 
 .process:hover,
 .process:active {
   opacity: 0.7;
+}
+
+.cancel_order {
+  all: unset;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  transition: all 0.3s ease;
+}
+
+.cancel_order:hover,
+.cancel_order:active {
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .background_desktop {
+    display: none;
+  }
+  .background_mobile {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+  }
+  .card_image_wrapper {
+    height: 170px;
+  }
 }

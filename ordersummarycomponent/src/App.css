@@ -12,6 +12,7 @@
   position: relative;
   background-color: hsl(225, 100%, 94%);
   min-height: 100vh;
+  padding: 20px;
 }
 
 .background_mobile {
