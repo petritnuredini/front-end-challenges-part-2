@@ -1,24 +1,21 @@
 import React from "react";
-import "./App.css";
+import { useAppContext } from "./context/ThemeContext";
+import Calculator from "./components/Calculator";
+import { theme1, theme2, theme3 } from "./constants/constants";
 
-function App() {
+const App = () => {
+  const { theme, themeName } = useAppContext(); // Assuming this returns the current theme object
+  console.log("theme", theme);
+  console.log("themeName", themeName);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className={`calculator_app ${themeName}`}
+      style={{ backgroundColor: theme.backgrounds.mainBackground }}
+    >
+      <Calculator />
     </div>
   );
-}
+};
 
 export default App;
