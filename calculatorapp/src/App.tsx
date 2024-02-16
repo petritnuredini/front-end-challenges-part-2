@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import { useAppContext } from "./context/ThemeContext";
 import Calculator from "./components/Calculator";
 import { theme1, theme2, theme3 } from "./constants/constants";

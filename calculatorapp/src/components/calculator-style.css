@@ -1,0 +1,82 @@
+.calculator_wrapper {
+  /* background-color: transparent; */
+  background-color: red;
+  width: 500px;
+  min-height: 600px;
+}
+
+.calc_header {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.calc_title {
+  font-size: 28px;
+}
+
+.theme_switcher {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.theme_label {
+  font-size: 14px;
+}
+
+/* Toggler.css */
+.toggler-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.toggle-numbers {
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-numbers span {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.toggle-numbers .active {
+  font-weight: bold;
+}
+
+.toggle-switch {
+  width: 65px;
+  height: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  transition: left 0.3s ease;
+}
+
+.position-1 {
+  left: 5%;
+}
+
+.position-2 {
+  left: 35%;
+}
+
+.position-3 {
+  left: 70%;
+}
