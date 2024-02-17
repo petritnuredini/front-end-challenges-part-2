@@ -16,8 +16,15 @@ interface AppProviderProps {
 
 export function AppProvider({ children }: AppProviderProps) {
   const [themeName, setThemeName] = useState("theme1");
-  const theme =
-    themeName === "theme1" ? theme1 : themeName === "theme2" ? theme2 : theme3;
+  const [theme, setTheme] = useState<any>(theme1);
+
+  useEffect(() => {
+    setTheme(
+      themeName === "theme1" ? theme1 : themeName === "theme2" ? theme2 : theme3
+    );
+  }, [themeName]);
+
+  //   const theme =
 
   const contextValue: AppContextProps = {
     themeName,

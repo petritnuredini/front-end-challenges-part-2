@@ -1,8 +1,10 @@
 .calculator_wrapper {
-  /* background-color: transparent; */
-  background-color: red;
-  width: 500px;
+  background-color: transparent;
+  width: 450px;
   min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .calc_header {
@@ -23,7 +25,8 @@
 }
 
 .theme_label {
-  font-size: 14px;
+  font-size: 10px;
+  padding-bottom: 5px;
 }
 
 /* Toggler.css */
@@ -51,7 +54,6 @@
 .toggle-switch {
   width: 65px;
   height: 20px;
-  border: 1px solid #ccc;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -63,7 +65,6 @@
 .circle {
   width: 15px;
   height: 15px;
-  background-color: white;
   border-radius: 50%;
   position: absolute;
   transition: left 0.3s ease;
@@ -79,4 +80,51 @@
 
 .position-3 {
   left: 70%;
+}
+
+.calc_screen {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 10px;
+}
+
+.calc_screen_value {
+  font-size: 40px;
+}
+
+.calc_key_pad {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: aqua;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.calc_key_regular {
+  width: calc((100% / 4) - 15px);
+  background-color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 5px;
+  /* box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 1); */
+}
+
+.calc_key {
+  font-size: 26px;
+}
+
+.calc_key_large {
+  background-color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 5px;
+  width: calc(50% - 10px);
 }
