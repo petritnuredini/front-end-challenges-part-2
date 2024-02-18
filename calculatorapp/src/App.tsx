@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import { useAppContext } from "./context/ThemeContext";
 import Calculator from "./components/calculator/Calculator";
-import { theme1, theme2, theme3 } from "./constants/constants";
 
 const App = () => {
-  const { theme, themeName } = useAppContext(); // Assuming this returns the current theme object
+  const { theme, themeName } = useAppContext();
+
+  const updateBodyBackground = (backgroundColor: string) => {
+    document.body.style.backgroundColor = backgroundColor;
+  };
+
+  useEffect(() => {
+    updateBodyBackground(theme.backgrounds.mainBackground);
+  }, [theme]);
 
   return (
     <div
