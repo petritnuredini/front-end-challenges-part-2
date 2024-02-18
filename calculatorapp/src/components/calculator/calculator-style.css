@@ -103,6 +103,8 @@
 }
 
 .calc_key_regular {
+  all: unset;
+  box-sizing: border-box;
   width: calc((100% / 4) - 15px);
   background-color: white;
   height: 50px;
@@ -111,14 +113,25 @@
   justify-content: center;
   border-radius: 5px;
   padding: 5px;
-  /* box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 1); */
+  cursor: pointer;
 }
 
+.calc_key_regular,
+.calc_key_large {
+  transition: filter 0.3s ease; /* Smooth transition for the filter */
+}
+
+.calc_key_regular:hover,
+.calc_key_large:hover {
+  filter: brightness(1.2); /* Increase brightness */
+}
 .calc_key {
   font-size: 26px;
 }
 
 .calc_key_large {
+  all: unset;
+  box-sizing: border-box;
   background-color: white;
   height: 50px;
   display: flex;
@@ -127,4 +140,5 @@
   border-radius: 5px;
   padding: 5px;
   width: calc(50% - 10px);
+  cursor: pointer;
 }
