@@ -207,7 +207,7 @@ const Calculator = () => {
   ];
 
   return (
-    <div className="calculator_wrapper">
+    <section className="calculator_wrapper">
       <div className="calc_header">
         <h1 className="calc_title" style={{ color: theme.text.typeTwo }}>
           calc
@@ -268,7 +268,7 @@ const Calculator = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

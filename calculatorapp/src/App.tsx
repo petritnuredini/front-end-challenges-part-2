@@ -15,12 +15,12 @@ const App = () => {
   }, [theme]);
 
   return (
-    <div
+    <main
       className={`calculator_app ${themeName}`}
       style={{ backgroundColor: theme.backgrounds.mainBackground }}
     >
       <Calculator />
-    </div>
+    </main>
   );
 };
 
