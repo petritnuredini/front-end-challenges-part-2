@@ -114,16 +114,17 @@
   border-radius: 5px;
   padding: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .calc_key_regular,
 .calc_key_large {
-  transition: filter 0.3s ease; /* Smooth transition for the filter */
+  transition: filter 0.3s ease;
 }
 
 .calc_key_regular:hover,
 .calc_key_large:hover {
-  filter: brightness(1.2); /* Increase brightness */
+  filter: brightness(1.2);
 }
 .calc_key {
   font-size: 26px;
@@ -141,4 +142,5 @@
   padding: 5px;
   width: calc(50% - 10px);
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
