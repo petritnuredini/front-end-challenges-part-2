@@ -48,7 +48,12 @@ const Calculator = () => {
       }
     }
 
-    setCalcScreenNumber(result.toString());
+    if (Number.isInteger(result)) {
+      setCalcScreenNumber(result.toString());
+    } else {
+      setCalcScreenNumber(result.toFixed(3).toString());
+    }
+
     setOperand1(null);
     setCurrentOperation(null);
   };
