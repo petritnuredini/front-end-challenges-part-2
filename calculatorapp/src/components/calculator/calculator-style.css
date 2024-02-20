@@ -151,10 +151,6 @@
 }
 
 @media (max-width: 767px) {
-  .calc_key_regular,
-  .calc_key_large {
-    height: 65px;
-  }
   .calculator_wrapper {
     width: 100%;
     max-width: 450px;
