@@ -24,8 +24,6 @@ export function AppProvider({ children }: AppProviderProps) {
     );
   }, [themeName]);
 
-  //   const theme =
-
   const contextValue: AppContextProps = {
     themeName,
     setThemeName,
