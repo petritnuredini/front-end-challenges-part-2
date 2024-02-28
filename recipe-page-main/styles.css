@@ -6,6 +6,14 @@
   color: hsl(24, 5%, 18%);
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 .recipe_page_container {
   background-color: #f4e5d8;
   display: flex;
