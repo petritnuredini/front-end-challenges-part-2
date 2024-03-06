@@ -9,21 +9,21 @@ import { CardProps } from "../types/types";
 const ThreeColumnPreviewCard = () => {
   const carTypes: CardProps[] = [
     {
-      title: "Sedan",
+      title: "Sedan.",
       description:
         "Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.",
       image: SedanImage,
       backgroundColor: "hsl(31, 77%, 52%)",
     },
     {
-      title: "SUVs",
+      title: "SUVs.",
       description:
         "Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.",
       image: SuvImage,
       backgroundColor: "hsl(184, 100%, 22%)",
     },
     {
-      title: "Luxury",
+      title: "Luxury.",
       description:
         "Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.",
       image: LuxuryImage,
