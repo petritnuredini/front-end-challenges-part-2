@@ -17,7 +17,7 @@ Each directory is a new adventure:
 
 - **Challenge Descriptions:** For every challenge, I've included a brief overview and the objectives I'm aiming to achieve. 🎯
 - **My Solutions:** Dive into my code to see how I approached each task using React JS and TypeScript. Feel free to explore, fork, and provide feedback! 💻
-- **Learning Insights:** I document key takeaways and learning points from each challenge, sharing the knowledge I've gained. 📖
+- **Learning Insights:** I document key takeaways and learning points from each challenge, sharing the knowledge I've gained.. 📖
 - **Future Enhancements:** My journey doesn't stop at submission. I outline potential improvements and future plans for each project. 🌱
 
 ## Let's Connect! 🌍
